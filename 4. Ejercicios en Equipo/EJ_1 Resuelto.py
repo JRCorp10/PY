@@ -54,6 +54,7 @@ if (primer_factura == 1):
     elif (articulo==3) and (ef_tarj==2):
         precio_final = (((almohada*cantidad)*IVA)*recargo)
 
+    # Muestro Resultados
     print("Datos de la factura")
     print("Nombre: ", nombre)
     print("Telefono: ", telefono)
@@ -79,4 +80,5 @@ if (primer_factura == 1):
     print("El total de su compra es: ", precio_final)
     print("Gracias por su compra, ", nombre)
 else:
+    # No hay facturas cargadas
     print("No hay facturas cargadas.")
