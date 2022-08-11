@@ -8,7 +8,7 @@ pasar tres parámetros. El programa debe tomar los parámetros e indicar en la t
 son múltiplos de dos. 
 
 Ejercicio 3: 
-Escriba un programa que solicite el 
+Escriba un programa que solicite el radio de una circunferencia y permita calcular el
 perímetro. Presente el resultado en la terminal del editor.
 Utilice la siguiente fórmula: 
 L = 2 · π · r 
@@ -21,7 +21,9 @@ Escriba un programa que solicite el radio de una circunferencia y permita calcul
 área. Presente el resultado en la terminal del editor.
 Utilice la siguiente fórmula: 
 𝐴 = 𝜋. 𝑟ଶ
-A = Área 
+A = Área
+π = Número pí igual a 3.1416
+r = Radio 
 
 Ejercicio 5: 
 Escriba un programa que solicite un valor entero por pantalla y presente en la terminal

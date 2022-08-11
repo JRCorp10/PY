@@ -1,5 +1,37 @@
-"""Operadores Aritméticos"""
+"""Operadores Adicionales"""
+# \n Salto de línea
+# \t Tabulacion
+# (s1+s2) Concatenar String
+# (s*3) Repite String
+# s[i:j] Rango i a j sin incluir la j
+# s[i:] Rango a partir de i
+# s[i:-1] Rango a partir de i, sin incluir el último elemento
+# s[i:j:k] De i a j de a k
+# len(s) Longuitud de S
+# str(33) Pasa a string a 33
+# ord("s") Pasa s a unicode
+# chr(115) Obtiene el caracter a partir del Unicode
+# s.find("pa") Busca pa dentro de s
+# s.rstrip() Remueve espacio
+# s.replace("pa","xx") Reemplaza pa por xx
+# s.split("+") Separa s con +
+# s.lower Convierte s a minúscula
+# chars = list["manzana"] = chars = ["m","a","n","z","a","n","a"]
+# chars.append("r") = chars = ["m","a","n","z","a","n","a","r"]
+# "".join(chars) = "Manzanar"
+# print(lista[0]) Muestra el primer elemento de la lista
+# print(lista[-1]) Muestra el primer elemento de la lista comenzando de la derecha
+# lista[[1,2][3,4]] Matriz de 2x2
+# lista = ["Juani"]*10 Lista con 10 elementos Juani
+# len(lista) Cantidad de elementos de la lista
+# d.keys() Todas las claves
+# d.values() Todos los valores
+# d.items() Todos los valores e items
+# d.copy() Copiar
+# d.clear() Limpiar
+# d.update(D2) Agrego D2 a D
 
+"""Operadores Aritméticos"""
 # +	Realiza suma entre los operandos -- 12 + 3 = 15
 # -	Realiza resta entre los operandos -- 12 - 3 = 9
 # *	Realiza multiplicación entre los operandos -- 12 * 3 = 36
@@ -93,3 +125,11 @@ lista.clear() # Limpia valores de la lista.
 lista.count() # Cuenta cantidad de items en la lista.
 lista.index() # Devuelve posición del puntero o índice.
 lista.reverse() # Corre la lista de atrás hacía delante.
+
+"""
+Librerias Alternativas
+
+from datetime import date
+fecha_actual = date.today()
+print(fecha_actual)
+"""
