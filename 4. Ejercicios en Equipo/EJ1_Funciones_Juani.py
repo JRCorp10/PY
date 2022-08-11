@@ -10,7 +10,7 @@ def stock(cantidad,articulo):
     elif (articulo==3):
         stock_almohada = stock_almohada-cantidad 
 
-def calculosyresultados(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,colchon,almohada,nombre,telefono,direccion,dni,fecha_venta,punto_venta):
+def calculosyresultados_factura1(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,colchon,almohada,factura1):
     # Hago Calculos
     if (articulo==1) and (ef_tarj==1):
         precio_final = ((cama*cantidad)*descuento)
@@ -29,29 +29,72 @@ def calculosyresultados(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,col
 
     # Muestro Resultados
     print("Datos de la factura")
-    print("Nombre: ", nombre)
-    print("Telefono: ", telefono)
-    print("Dirección: ", direccion)
-    print("DNI: ", dni)
-    print("Fecha de Venta: ", fecha_venta)
-    if (punto_venta == 1):
+    print("Nombre: ", factura1[0])
+    print("Telefono: ", factura1[1])
+    print("Dirección: ", factura1[2])
+    print("DNI: ", factura1[3])
+    print("Fecha de Venta: ", factura1[4])
+    if (factura1[5] == 1):
         print("Punto de Venta: Salon")
     else:
         print("Punto de Venta: Tienda Online")
-    if (articulo == 1):
+    if (factura1[6] == 1):
         print("Articulo: Cama")
-    elif(articulo == 2):
+    elif(factura1[6] == 2):
         print("Articulo: Colchon")
     else:
         print("Articulo: Almohada")
-    print("Cantidad: ", cantidad)
-    if (ef_tarj == 1):
+    print("Cantidad: ", factura1[7])
+    if (factura1[8] == 1):
         print("Tipo: Efectivo")
     else:
         print("Tipo: Tarjeta")
 
     print("El total de su compra es: ", precio_final)
-    print("Gracias por su compra, ", nombre)
+    print("Gracias por su compra, ", factura1[0])
 
-def funcion4(factura_nombres):
-    print(factura_nombres)
+def calculosyresultados_factura2(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,colchon,almohada,factura2):
+    # Hago Calculos
+    if (articulo==1) and (ef_tarj==1):
+        precio_final = ((cama*cantidad)*descuento)
+    elif (articulo==1) and (ef_tarj==2):
+        precio_final = (((cama*cantidad)*IVA)*recargo)
+
+    if (articulo==2) and (ef_tarj==1):
+        precio_final = ((colchon*cantidad)*descuento)
+    elif (articulo==2) and (ef_tarj==2):
+        precio_final = (((colchon*cantidad)*IVA)*recargo)
+
+    if (articulo==3) and (ef_tarj==1):
+        precio_final = ((almohada*cantidad)*descuento)
+    elif (articulo==3) and (ef_tarj==2):
+        precio_final = (((almohada*cantidad)*IVA)*recargo)
+
+    # Muestro Resultados
+    print("Datos de la factura")
+    print("Nombre: ", factura2[0])
+    print("Telefono: ", factura2[1])
+    print("Dirección: ", factura2[2])
+    print("DNI: ", factura2[3])
+    print("Fecha de Venta: ", factura2[4])
+    if (factura2[5] == 1):
+        print("Punto de Venta: Salon")
+    else:
+        print("Punto de Venta: Tienda Online")
+    if (factura2[6] == 1):
+        print("Articulo: Cama")
+    elif(factura2[6] == 2):
+        print("Articulo: Colchon")
+    else:
+        print("Articulo: Almohada")
+    print("Cantidad: ", factura2[7])
+    if (factura2[8] == 1):
+        print("Tipo: Efectivo")
+    else:
+        print("Tipo: Tarjeta")
+
+    print("El total de su compra es: ", precio_final)
+    print("Gracias por su compra, ", factura2[0])
+
+def facturascargadas (factura_nombres):
+    print("Las facturas cargadas son: ", factura_nombres)

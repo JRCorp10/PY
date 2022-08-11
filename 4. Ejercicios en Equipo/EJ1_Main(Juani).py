@@ -9,7 +9,7 @@ factura2 = []
 primer_factura = 0
 cantidad_facturas = 1
 precio_final = 0
-precio_final = int(precio_final)
+precio_final = float(precio_final)
 IVA = 1.21
 recargo = 1.40
 descuento = 0.9
@@ -94,7 +94,13 @@ if (cantidad_facturas == 3):
     print("Ha llegado al máximo de facturas.")
 
 if (primer_factura == 1):
-    calculosyresultados(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,colchon,almohada,nombre,telefono,direccion,dni,fecha_venta,punto_venta)
+    facturascargadas(factura_nombres)
+    revisar = input("Que factura desea revisar? (1=Primera,2=Segunda): ")
+    revisar = int(revisar)
+    if (revisar == 1):
+        calculosyresultados_factura1(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,colchon,almohada,factura1)
+    elif(revisar == 2):
+        calculosyresultados_factura2(articulo,ef_tarj,cantidad,descuento,recargo,IVA,cama,colchon,almohada,factura2)
 else:
     # No hay facturas cargadas
     print("No hay facturas cargadas.")

@@ -1,11 +1,8 @@
 # Pregunta si quiero entrar al programa.
-pregunta = input("Quiere ingresar al programa? (1=Si,2=No): ")
-pregunta = int(pregunta)
-
-while (pregunta == 1):
-
-    # Contenido del código
-
-    # Pregunta si deseo continuar.
-    pregunta = input("Desea Continuar? (1=Si,2=No): ")
-    pregunta = int(pregunta)
+contador = 5
+while (contador >= 0):
+    if (contador == 0):
+        print("YAAAAAAAA")
+    else:
+        print(contador)
+    contador -= 1
