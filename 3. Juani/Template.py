@@ -1,8 +1,5 @@
 # Pregunta si quiero entrar al programa.
-contador = 5
-while (contador >= 0):
-    if (contador == 0):
-        print("YAAAAAAAA")
-    else:
-        print(contador)
-    contador -= 1
+contador = 1
+while (contador <= 10):
+    print(contador)
+    contador += 1
