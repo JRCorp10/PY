@@ -1,0 +1,1 @@
+# Mismo ejercicio hecho en _8, considero el uso de listas mejor.
