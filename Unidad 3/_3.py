@@ -1,0 +1,6 @@
+frase = str(input("Ingrese una oración:"))
+print("La cantidad de veces que aparece la letra A en:", frase, ", es:",  frase.count('a')+frase.count('A')+frase.count('á')+frase.count('Á'))
+print("La cantidad de veces que aparece la letra E en:", frase, ", es:",  frase.count('e')+frase.count('E')+frase.count('é')+frase.count('É'))
+print("La cantidad de veces que aparece la letra I en:", frase, ", es:",  frase.count('i')+frase.count('I')+frase.count('í')+frase.count('Í'))
+print("La cantidad de veces que aparece la letra O en:", frase, ", es:",  frase.count('o')+frase.count('O')+frase.count('ó')+frase.count('Ó'))
+print("La cantidad de veces que aparece la letra U en:", frase, ", es:",  frase.count('u')+frase.count('U')+frase.count('ú')+frase.count('Ú'))
